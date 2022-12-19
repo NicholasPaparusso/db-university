@@ -11,10 +11,7 @@ WHERE `cfu` > 10;
 3)
 SELECT *
 FROM `students`
-WHERE YEAR(`date_of_birth`) = '1992'
-AND MONTH(`date_of_birth`)= '12'
-AND DAY(`date_of_birth`) <= '18';
-
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth` , NOW()) > 30 ;
 4)
 SELECT *
 FROM `courses`
