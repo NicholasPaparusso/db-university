@@ -72,4 +72,4 @@ JOIN `exam_student` ON `exam_student`.`student_id` = `students`.`id`
 JOIN `exams` ON `exams`.`id` = `exam_student`.`exam_id`
 JOIN `courses` ON `courses`.`id` = `exams`.`course_id`
 GROUP BY `students`.`id`, `courses`.`id` 
-HAVING `voto_masimo` > 17
+HAVING `voto_masimo` > 17 ;
